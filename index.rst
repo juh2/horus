@@ -9,12 +9,10 @@ Welcome to Horus's documentation!
 Contents:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
 
    installation/index
-   bedienung/standardfunktionen/index
-   bedienung/erweiterte-funktionen
-   bedienung/konfiguration
+   bedienung/index
 
 Indices and tables
 ==================
