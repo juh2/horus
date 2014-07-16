@@ -11,9 +11,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   installation/linux
-   installation/macosx
-   installation/windows
+   installation/index
    bedienung/standardfunktionen/index
    bedienung/erweiterte-funktionen
    bedienung/konfiguration
