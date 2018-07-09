@@ -6,6 +6,8 @@
 Welcome to Horus's documentation!
 =================================
 
+.. include:: standard.rst
+
 Contents:
 
 .. toctree::

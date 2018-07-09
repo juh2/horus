@@ -31,15 +31,15 @@ import shlex
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.autodoc',
-    'sphinx.ext.doctest',
-    'sphinx.ext.intersphinx',
-    'sphinx.ext.todo',
-    'sphinx.ext.coverage',
-    'sphinx.ext.mathjax',
-    'sphinx.ext.ifconfig',
-    'sphinx.ext.viewcode',
-]
+        'sphinx.ext.autodoc',
+        'sphinx.ext.doctest',
+        'sphinx.ext.intersphinx',
+        'sphinx.ext.todo',
+        'sphinx.ext.coverage',
+        'sphinx.ext.mathjax',
+        'sphinx.ext.ifconfig',
+        'sphinx.ext.viewcode',
+        ]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -213,26 +213,26 @@ htmlhelp_basename = 'Horusdoc'
 # -- Options for LaTeX output ---------------------------------------------
 
 latex_elements = {
-# The paper size ('letterpaper' or 'a4paper').
-#'papersize': 'letterpaper',
+        # The paper size ('letterpaper' or 'a4paper').
+        #'papersize': 'letterpaper',
 
-# The font size ('10pt', '11pt' or '12pt').
-#'pointsize': '10pt',
+        # The font size ('10pt', '11pt' or '12pt').
+        #'pointsize': '10pt',
 
-# Additional stuff for the LaTeX preamble.
-#'preamble': '',
+        # Additional stuff for the LaTeX preamble.
+        #'preamble': '',
 
-# Latex figure (float) alignment
-#'figure_align': 'htbp',
-}
+        # Latex figure (float) alignment
+        #'figure_align': 'htbp',
+        }
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  (master_doc, 'Horus.tex', 'Horus Documentation',
-   'Jan Ulrich Hasecke', 'manual'),
-]
+        (master_doc, 'Horus.tex', 'Horus Documentation',
+            'Jan Ulrich Hasecke', 'manual'),
+        ]
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
@@ -260,9 +260,9 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'horus', 'Horus Documentation',
-     [author], 1)
-]
+        (master_doc, 'horus', 'Horus Documentation',
+            [author], 1)
+        ]
 
 # If true, show URL addresses after external links.
 #man_show_urls = False
@@ -274,10 +274,10 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  (master_doc, 'Horus', 'Horus Documentation',
-   author, 'Horus', 'One line description of project.',
-   'Miscellaneous'),
-]
+        (master_doc, 'Horus', 'Horus Documentation',
+            author, 'Horus', 'One line description of project.',
+            'Miscellaneous'),
+        ]
 
 # Documents to append as an appendix to all manuals.
 #texinfo_appendices = []
@@ -364,3 +364,21 @@ epub_exclude_files = ['search.html']
 
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {'https://docs.python.org/': None}
+
+redirect_files = ['bedienung/einleitung.html']
+
+from shutil import copyfile
+# copy legacy redirects
+def copy_legacy_redirects(app, docname): # Sphinx expects two arguments
+    if app.builder.name == 'html':
+        for html_src_path in redirect_files:
+            target_path = app.outdir + '/' + html_src_path
+            src_path = app.srcdir + '/' + html_src_path
+        if os.path.isfile(src_path):
+            copyfile(src_path, target_path)
+
+
+def setup(app):
+        app.connect('build-finished', copy_legacy_redirects)
+
+
