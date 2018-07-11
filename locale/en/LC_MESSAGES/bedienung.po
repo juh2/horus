@@ -1,0 +1,331 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Jan Ulrich Hasecke
+# This file is distributed under the same license as the Horus package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Horus 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-10 16:52+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../bedienung/erweiterte-funktionen.rst:3
+msgid "Erweiterte Funktionen"
+msgstr ""
+
+#: ../../bedienung/erweiterte-funktionen.rst:5
+#: ../../bedienung/konfiguration.rst:4
+#: ../../bedienung/standardfunktionen/aendern.rst:4
+#: ../../bedienung/standardfunktionen/aendern.rst:8
+#: ../../bedienung/standardfunktionen/eingeben.rst:7
+#: ../../bedienung/standardfunktionen/eingeben.rst:11
+#: ../../bedienung/standardfunktionen/index.rst:4
+#: ../../bedienung/standardfunktionen/index.rst:14
+#: ../../bedienung/standardfunktionen/loeschen.rst:4
+#: ../../bedienung/standardfunktionen/loeschen.rst:8
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod "
+"tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim "
+"veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea "
+"commodo consequat. Duis aute irure dolor in reprehenderit in voluptate "
+"velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint "
+"occaecat cupidatat non proident, sunt in culpa qui officia deserunt "
+"mollit anim id est laborum."
+msgstr ""
+
+#: docutils:1 of
+msgid "This is the Docutils (Python Documentation Utilities) package."
+msgstr ""
+
+#: docutils:4 of
+msgid "Package Structure"
+msgstr ""
+
+#: docutils:6 of
+msgid "Modules:"
+msgstr ""
+
+#: docutils:8 of
+msgid ""
+"__init__.py: Contains component base classes, exception classes, and "
+"Docutils version information."
+msgstr ""
+
+#: docutils:11 of
+msgid ""
+"core.py: Contains the ``Publisher`` class and ``publish_*()`` convenience"
+" functions."
+msgstr ""
+
+#: docutils:14 of
+msgid ""
+"frontend.py: Runtime settings (command-line interface, configuration "
+"files) processing, for Docutils front-ends."
+msgstr ""
+
+#: docutils:17 of
+msgid "io.py: Provides a uniform API for low-level input and output."
+msgstr ""
+
+#: docutils:19 of
+msgid "nodes.py: Docutils document tree (doctree) node class library."
+msgstr ""
+
+#: docutils:21 of
+msgid ""
+"statemachine.py: A finite state machine specialized for regular-"
+"expression-based text filters."
+msgstr ""
+
+#: docutils:24 of
+msgid "Subpackages:"
+msgstr ""
+
+#: docutils:26 of
+msgid "languages: Language-specific mappings of terms."
+msgstr ""
+
+#: docutils:28 of
+msgid "parsers: Syntax-specific input parser modules or packages."
+msgstr ""
+
+#: docutils:30 of
+msgid ""
+"readers: Context-specific input handlers which understand the data source"
+" and manage a parser."
+msgstr ""
+
+#: docutils:33 of
+msgid "transforms: Modules used by readers and writers to modify DPS doctrees."
+msgstr ""
+
+#: docutils:36 of
+msgid ""
+"utils: Contains the ``Reporter`` system warning class and miscellaneous "
+"utilities used by readers, writers, and transforms."
+msgstr ""
+
+#: docutils:39 of
+msgid ""
+"utils/urischemes.py: Contains a complete mapping of known URI addressing "
+"scheme names to descriptions."
+msgstr ""
+
+#: docutils:42 of
+msgid ""
+"utils/math: Contains functions for conversion of mathematical notation "
+"between different formats (LaTeX, MathML, text, ...)."
+msgstr ""
+
+#: docutils:45 of
+msgid "writers: Format-specific output translators."
+msgstr ""
+
+#: docutils.Component:1 of
+msgid "Base class for Docutils components."
+msgstr ""
+
+#: docutils.Component.component_type:1 of
+msgid ""
+"Name of the component type ('reader', 'parser', 'writer').  Override in "
+"subclasses."
+msgstr ""
+
+#: docutils.Component.supported:1 of
+msgid "Names for this component.  Override in subclasses."
+msgstr ""
+
+#: docutils.Component.supports:1 of
+msgid "Is `format` supported by this component?"
+msgstr ""
+
+#: docutils.Component.supports:3 of
+msgid ""
+"To be used by transforms to ask the dependent component if it supports a "
+"certain input context or output format."
+msgstr ""
+
+#: docutils.SettingsSpec:1 of
+msgid "Runtime setting specification base class."
+msgstr ""
+
+#: docutils.SettingsSpec:3 of
+msgid "SettingsSpec subclass objects used by `docutils.frontend.OptionParser`."
+msgstr ""
+
+#: docutils.SettingsSpec.config_section:1 of
+msgid ""
+"The name of the config file section specific to this component "
+"(lowercase, no brackets).  Override in subclasses."
+msgstr ""
+
+#: docutils.SettingsSpec.config_section_dependencies:1 of
+msgid ""
+"A list of names of config file sections that are to be applied before "
+"`config_section`, in order (from general to specific).  In other words, "
+"the settings in `config_section` are to be overlaid on top of the "
+"settings from these sections.  The \"general\" section is assumed "
+"implicitly. Override in subclasses."
+msgstr ""
+
+#: docutils.SettingsSpec.relative_path_settings:1 of
+msgid ""
+"Settings containing filesystem paths.  Override in subclasses. Settings "
+"listed here are to be interpreted relative to the current working "
+"directory."
+msgstr ""
+
+#: docutils.SettingsSpec.settings_default_overrides:1 of
+msgid ""
+"A dictionary of auxiliary defaults, to override defaults for settings "
+"defined in other components.  Override in subclasses."
+msgstr ""
+
+#: docutils.SettingsSpec.settings_defaults:1 of
+msgid ""
+"A dictionary of defaults for settings not in `settings_spec` (internal "
+"settings, intended to be inaccessible by command-line and config file). "
+"Override in subclasses."
+msgstr ""
+
+#: docutils.SettingsSpec.settings_spec:1 of
+msgid "Runtime settings specification.  Override in subclasses."
+msgstr ""
+
+#: docutils.SettingsSpec.settings_spec:3 of
+msgid ""
+"Defines runtime settings and associated command-line options, as used by "
+"`docutils.frontend.OptionParser`.  This is a tuple of:"
+msgstr ""
+
+#: docutils.SettingsSpec.settings_spec:6 of
+msgid ""
+"Option group title (string or `None` which implies no group, just a list "
+"of single options)."
+msgstr ""
+
+#: docutils.SettingsSpec.settings_spec:9 of
+msgid "Description (string or `None`)."
+msgstr ""
+
+#: docutils.SettingsSpec.settings_spec:11 of
+msgid "A sequence of option tuples.  Each consists of:"
+msgstr ""
+
+#: docutils.SettingsSpec.settings_spec:13 of
+msgid "Help text (string)"
+msgstr ""
+
+#: docutils.SettingsSpec.settings_spec:15 of
+msgid "List of option strings (e.g. ``['-Q', '--quux']``)."
+msgstr ""
+
+#: docutils.SettingsSpec.settings_spec:17 of
+msgid ""
+"Dictionary of keyword arguments sent to the OptionParser/OptionGroup "
+"``add_option`` method."
+msgstr ""
+
+#: docutils.SettingsSpec.settings_spec:20 of
+msgid ""
+"Runtime setting names are derived implicitly from long option names ('--"
+"a-setting' becomes ``settings.a_setting``) or explicitly from the 'dest' "
+"keyword argument."
+msgstr ""
+
+#: docutils.SettingsSpec.settings_spec:24 of
+msgid ""
+"Most settings will also have a 'validator' keyword & function.  The "
+"validator function validates setting values (from configuration files and"
+" command-line option arguments) and converts them to appropriate types.  "
+"For example, the ``docutils.frontend.validate_boolean`` function, "
+"**required by all boolean settings**, converts true values ('1', 'on', "
+"'yes', and 'true') to 1 and false values ('0', 'off', 'no', 'false', and "
+"'') to 0.  Validators need only be set once per setting.  See the "
+"`docutils.frontend.validate_*` functions."
+msgstr ""
+
+#: docutils.SettingsSpec.settings_spec:33 of
+msgid "See the optparse docs for more details."
+msgstr ""
+
+#: docutils.SettingsSpec.settings_spec:35 of
+msgid ""
+"More triples of group title, description, options, as many times as "
+"needed.  Thus, `settings_spec` tuples can be simply concatenated."
+msgstr ""
+
+#: docutils.TransformSpec:1 of
+msgid "Runtime transform specification base class."
+msgstr ""
+
+#: docutils.TransformSpec:3 of
+msgid "TransformSpec subclass objects used by `docutils.transforms.Transformer`."
+msgstr ""
+
+#: docutils.TransformSpec.get_transforms:1 of
+msgid "Transforms required by this class.  Override in subclasses."
+msgstr ""
+
+#: docutils.TransformSpec.unknown_reference_resolvers:1 of
+msgid ""
+"List of functions to try to resolve unknown references.  Unknown "
+"references have a 'refname' attribute which doesn't correspond to any "
+"target in the document.  Called when the transforms in "
+"`docutils.tranforms.references` are unable to find a correct target.  The"
+" list should contain functions which will try to resolve unknown "
+"references, with the following signature::"
+msgstr ""
+
+#: docutils.TransformSpec.unknown_reference_resolvers:11 of
+msgid ""
+"If the function is able to resolve the reference, it should also remove "
+"the 'refname' attribute and mark the node as resolved::"
+msgstr ""
+
+#: docutils.TransformSpec.unknown_reference_resolvers:17 of
+msgid ""
+"Each function must have a \"priority\" attribute which will affect the "
+"order the unknown_reference_resolvers are run::"
+msgstr ""
+
+#: docutils.TransformSpec.unknown_reference_resolvers:22 of
+msgid "Override in subclasses."
+msgstr ""
+
+#: ../../bedienung/index.rst:2
+msgid "Bedienung"
+msgstr ""
+
+#: ../../bedienung/konfiguration.rst:2
+msgid "Horus konfigurieren"
+msgstr ""
+
+#: ../../bedienung/standardfunktionen/aendern.rst:2
+msgid "Daten ändern"
+msgstr ""
+
+#: ../../bedienung/standardfunktionen/eingeben.rst:3
+msgid "Daten eingeben"
+msgstr ""
+
+#: ../../bedienung/standardfunktionen/index.rst:2
+msgid "Standardfunktionen"
+msgstr ""
+
+#: ../../bedienung/standardfunktionen/index.rst:10
+msgid "Datenbank anlegen"
+msgstr ""
+
+#: ../../bedienung/standardfunktionen/loeschen.rst:2
+msgid "Daten löschen"
+msgstr ""
+
